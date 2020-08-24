@@ -156,6 +156,7 @@ nav {
 
 section.main {
     margin-top: 48px;
+    margin-bottom: 80px;
     display: grid;
     grid-template-columns: 1fr 272px;
     grid-column-gap: 24px;
@@ -240,13 +241,20 @@ section.main {
         display: block;
     }
 }
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    a {
+        text-transform: uppercase;
+    }
+}
 
 aside {
     height: 100vh;
     width: 100%;
     // background: grey;
 }
-.ad-widget {
+.torpead-widget {
     img {
         width: 100%;
         height: 304px;
