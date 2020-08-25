@@ -391,7 +391,7 @@ p.small {
   transition: all ease-in 100ms;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
   -webkit-transform: translateY(-2px);
       -ms-transform: translateY(-2px);
           transform: translateY(-2px);
@@ -454,7 +454,7 @@ p.small {
   fill: #ffffff;
 }
 
-.scroll-to-top:hover {
+.scroll-to-top:hover, .scroll-to-top:focus {
   background: #0a3370;
 }
 
@@ -574,7 +574,7 @@ nav {
 }
 
 .nav-link a {
-  padding: 24px 0;
+  padding: 16px 0;
 }
 
 .nav-link .active {
@@ -824,6 +824,10 @@ aside {
 
 .site-footer .social-links {
   margin-top: 24px;
+}
+
+.site-footer .social-links a {
+  display: inline-block;
 }
 
 .site-footer .social-links img {
