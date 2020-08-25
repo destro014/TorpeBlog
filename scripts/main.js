@@ -5,9 +5,9 @@ window.onscroll = () => {
     document.body.scrollTop > window.innerHeight ||
     document.documentElement.scrollTop > window.innerHeight
   ) {
-    scrollToTop.style.display = "flex";
+    scrollToTop.style.transform = "translate3d(0, 0, 0)";
   } else {
-    scrollToTop.style.display = "none";
+    scrollToTop.style.transform = "translate3d(100px, 0, 0)";
   }
 };
 
