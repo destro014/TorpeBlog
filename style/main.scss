@@ -3,6 +3,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Poppins, roboto, sans-serif;
     background: $bg;
@@ -78,6 +81,27 @@ p.small {
     &:focus,
     &:active {
         border-color: $primary;
+    }
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: $grey;
+    border: 1px solid transparent;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    svg {
+        height: 16px;
+        fill: $light;
+    }
+    &:hover {
+        background: $primary;
     }
 }
 header {
