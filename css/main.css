@@ -414,13 +414,14 @@ p.small {
 }
 
 .input-group {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .input-group label {
   display: block;
   font-size: 14px;
   color: #666666;
+  margin-bottom: 4px;
 }
 
 .form-control {
@@ -523,8 +524,6 @@ nav {
 }
 
 .navbar .brand {
-  font-size: 24px;
-  font-weight: 700;
   margin-right: 24px;
 }
 
@@ -962,7 +961,6 @@ aside {
 
 .contact-form .form-control {
   width: 100%;
-  border-color: #666666;
 }
 
 .contact-form textarea {
@@ -1017,6 +1015,7 @@ p.published-date {
       -ms-flex: 1;
           flex: 1;
   width: 100%;
+  height: 92px;
   resize: none;
 }
 
@@ -1029,7 +1028,7 @@ p.published-date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .comment .comment-block {
@@ -1120,6 +1119,39 @@ p.published-date {
   color: #0a3370;
 }
 
+section.auth {
+  margin: 48px 0;
+}
+
+.login-register {
+  max-width: 480px;
+  width: 100%;
+  border-radius: 16px;
+  margin: auto;
+  background: #ffffff;
+  padding: 48px;
+}
+
+.login-register .form-control {
+  width: 100%;
+}
+
+.login-register .forgot-password {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.login-register .create-one,
+.login-register .tos {
+  margin-top: 32px;
+  font-size: 14px;
+}
+
+.login-register .create-one:not(a),
+.login-register .tos:not(a) {
+  color: #666666;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     padding: 0 80px;
@@ -1143,11 +1175,18 @@ p.published-date {
     padding-bottom: 48px;
   }
   .navbar .search-container {
+    width: 100%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     margin-right: 0;
     padding: 16px 12px 16px 0;
+  }
+  .navbar .search-container .input-group {
+    width: 100%;
+  }
+  .navbar .search-container #search {
+    width: 100%;
   }
   .navbar .login {
     width: 100%;
@@ -1231,6 +1270,9 @@ p.published-date {
         grid-template-rows: auto;
     grid-row-gap: 48px;
     margin-top: 108px;
+  }
+  section.auth {
+    margin-top: 80px;
   }
 }
 
