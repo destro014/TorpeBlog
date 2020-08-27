@@ -1160,6 +1160,14 @@ section.auth {
   color: #666666;
 }
 
+.profile {
+  width: 100%;
+  padding: 24px;
+  background: #ffffff;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     padding: 0 80px;
@@ -1280,6 +1288,9 @@ section.auth {
     margin-top: 108px;
   }
   section.auth {
+    margin-top: 80px;
+  }
+  .profile {
     margin-top: 80px;
   }
 }

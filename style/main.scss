@@ -636,7 +636,13 @@ section.auth {
         }
     }
 }
-
+.profile {
+    width: 100%;
+    padding: 24px;
+    background: $light;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
 //responsive
 
 @media screen and (max-width: 1200px) {
@@ -738,6 +744,9 @@ section.auth {
     }
 
     section.auth {
+        margin-top: 80px;
+    }
+    .profile {
         margin-top: 80px;
     }
 }
