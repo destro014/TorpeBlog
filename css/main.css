@@ -495,9 +495,13 @@ nav {
 .navbar.active {
   height: auto;
   max-height: 560px;
+  padding-bottom: 24px;
   -webkit-transition: max-height cubic-bezier(0.165, 0.84, 0.44, 1) 400ms;
   -o-transition: max-height cubic-bezier(0.165, 0.84, 0.44, 1) 400ms;
   transition: max-height cubic-bezier(0.165, 0.84, 0.44, 1) 400ms;
+  border-radius: 0 0 8px 8px;
+  -webkit-box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.08);
+          box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .navbar {
@@ -752,6 +756,8 @@ section.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -764,6 +770,8 @@ section.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .post-reacts > div {
@@ -1286,6 +1294,79 @@ section.auth {
   }
   .site-header .header-image {
     display: none;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+  p.small {
+    font-size: 14px;
+  }
+  .post {
+    padding: 0 16px 16px;
+  }
+  .post-cover {
+    width: calc(100% + 32px);
+    margin-left: -16px;
+  }
+  .similar-posts {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-row-gap: 48px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .widget-posts {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    width: 272px;
+  }
+  .post-cover {
+    height: 240px;
+  }
+  .post-cover img {
+    height: 240px;
+  }
+  .likes,
+  .comments,
+  .share {
+    padding: 12px 0;
+  }
+  .newsletter form {
+    display: block;
+  }
+  .newsletter form .input-group {
+    margin: 0;
+  }
+  .newsletter form .form-control {
+    margin-bottom: 8px;
+  }
+  .site-footer .footer-top {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .site-footer .newsletter {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .site-footer .helpful-link {
+    justify-self: flex-start;
+  }
+  .similar-posts {
+    width: 272px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-row-gap: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
