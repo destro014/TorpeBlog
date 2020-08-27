@@ -1318,6 +1318,17 @@ section.auth {
         grid-template-rows: auto;
     grid-row-gap: 48px;
   }
+  .page,
+  .single-post {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .categories li {
+    padding-bottom: 12px;
+  }
+  p.published-date {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -1359,6 +1370,24 @@ section.auth {
   }
   .site-footer .helpful-link {
     justify-self: flex-start;
+  }
+  .comment-box {
+    display: block;
+    margin-bottom: 48px;
+  }
+  .comment-box .input-group {
+    margin: 0;
+  }
+  .comment .comment-user-img {
+    width: 32px;
+    height: 32px;
+  }
+  .comment .comment-user-img img {
+    width: 32px;
+    height: 32px;
+  }
+  .comment .user-info {
+    font-size: 14px;
   }
   .similar-posts {
     width: 272px;

@@ -774,8 +774,18 @@ section.auth {
         grid-template-rows: auto;
         grid-row-gap: 48px;
     }
+    .page,
+    .single-post {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .categories li {
+        padding-bottom: 12px;
+    }
+    p.published-date {
+        margin: 0;
+    }
 }
-
 @media screen and (max-width: 560px) {
     .widget-posts {
         grid-template-columns: 1fr;
@@ -813,6 +823,26 @@ section.auth {
         }
         .helpful-link {
             justify-self: flex-start;
+        }
+    }
+    .comment-box {
+        display: block;
+        margin-bottom: 48px;
+        .input-group {
+            margin: 0;
+        }
+    }
+    .comment {
+        .comment-user-img {
+            width: 32px;
+            height: 32px;
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+        .user-info {
+            font-size: 14px;
         }
     }
     .similar-posts {
